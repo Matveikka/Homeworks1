@@ -7,7 +7,7 @@ def custom_write(file_name, strings):
         file = open(file_name, 'a', encoding='utf-8')
         position = file.tell()
         file.write(i + '\n')
-        strings_positions[(x, position, i)] = strings
+        strings_positions[((x, position), i)] = strings
         file.close()
     return strings_positions
 info = [
