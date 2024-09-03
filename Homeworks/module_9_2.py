@@ -5,4 +5,4 @@ second_result = [(x, y) for x in first_strings for y in second_strings if len(x)
 third_result = {x: len(x) for x in first_strings + second_strings if not len(x) % 2}
 print(first_result)
 print(second_result)
-print(third_result)
+ print(third_result)
