@@ -1,7 +1,7 @@
-from app.backend.db import Base
+from _app.backend.db import Base
 from sqlalchemy import Column, ForeignKey, Integer, String
 from sqlalchemy.orm import relationship
-from app.models import *
+from _app.models import *
 
 
 class User(Base):
