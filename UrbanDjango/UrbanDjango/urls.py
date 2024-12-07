@@ -20,6 +20,7 @@ from django.contrib import admin
 from django.urls import path
 from UrbanDjango.task2.views import *
 from UrbanDjango.task4.views import *
+from UrbanDjango.task5.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', f_view),
@@ -27,4 +28,6 @@ urlpatterns = [
     path('platform/', game_platform),
     path('platform/games/', game),
     path("platform/cart/", cart),
-]
+    path("html_forms/", sign_up_by_html),
+    path("django_forms", sign_up_by_django)
+    ]
