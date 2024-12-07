@@ -19,7 +19,7 @@ from django.urls import path
 from django.contrib import admin
 from django.urls import path
 from UrbanDjango.task2.views import *
-from UrbanDjango.task3.views import *
+from UrbanDjango.task4.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', f_view),
