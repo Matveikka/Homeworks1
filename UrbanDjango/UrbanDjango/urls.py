@@ -18,9 +18,13 @@ from django.contrib import admin
 from django.urls import path
 from django.contrib import admin
 from django.urls import path
-from UrbanDjango.task2.views import f_view, cl_view
+from UrbanDjango.task2.views import *
+from UrbanDjango.task3.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', f_view),
-    path('', cl_view)
+    path('', cl_view),
+    path('platform/', game_platform),
+    path('platform/games/', game),
+    path("platform/cart/", cart),
 ]
