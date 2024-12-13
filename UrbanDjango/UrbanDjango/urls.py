@@ -18,9 +18,9 @@ from django.contrib import admin
 from django.urls import path
 from django.contrib import admin
 from django.urls import path
-from UrbanDjango.task2.views import *
-from UrbanDjango.task4.views import *
-from UrbanDjango.task5.views import *
+from UrbanDjango.task2.views import f_view, cl_view
+from UrbanDjango.task4.views import game, cart, game_platform
+from UrbanDjango.task5.views import sign_up_by_django, sign_up_by_html
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', f_view),
